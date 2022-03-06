@@ -1,21 +1,2 @@
 * { padding:0; margin:0; box-sizing:border-box; outline: none; }
-img { max-width:100%; }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: beige;
-    width: 1040px;
-}
-header{
-    
-    background-color: rgb(82, 68, 92);
-    height: 56px;
-    text-align: center;
-    color: whitesmoke;
-}
-footer{
-    background-color: rgb(82, 68, 92);
-    height: 56px;
-    text-align: right;
-    color: whitesmoke;
-}
+
