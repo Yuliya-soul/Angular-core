@@ -1,1 +1,6 @@
 * { padding:0; margin:0; box-sizing:border-box; outline: none; }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1040px;
+}

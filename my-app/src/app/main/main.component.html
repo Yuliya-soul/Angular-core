@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <app-header> <h2>Video course {{clicks}}</h2></app-header>
-  <app-video-list [section]="sectionName"   (onChanged)="onChanged($event)"></app-video-list>
+  <app-header> <h2>Video course   {{clicks}}</h2></app-header>
+  <div class="container">
+    <p #pRef>
+    Some hiddenText
+     </p>
+  </div>
   
+  <app-video-list [section]="sectionName"   (onChanged)="onChangeParent($event)"  ></app-video-list>
+ 
 </body>
 <app-footer></app-footer>
 </html>
