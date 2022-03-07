@@ -9,8 +9,16 @@
 
   <div class="video-course-container">
     <br />
-    <abbr appVideoListBold> Video course 1</abbr>
-    <button mat-button color="primary" (click)="change(true)">+</button>
-    <button mat-button color="primary" (click)="change(false)">-</button>
+    <ul  *ngFor="let item of list" >
+      <li style="margin-bottom: 15px; list-style-type: none">
+        <abbr appVideoListBold > Video course {{item}}</abbr>
+        <br>
+        {{text}}
+        <button mat-button color="primary" (click)="change(true)" style="border: solid;margin-right: 15px;">Edit</button>
+        <button mat-button color="primary" (click)="change(false)" style="border: solid;">Delete</button>
+      </li>
+
+    </ul>
+   
   </div>
 </div>

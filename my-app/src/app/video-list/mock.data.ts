@@ -1,0 +1,3 @@
+export const videoDescription=[
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique magna sit amet purus gravida quis. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Convallis a cras semper auctor neque vitae tempus. Id diam vel quam elementum pulvinar etiam non quam. Purus in mollis nunc sed id semper risus in hendrerit. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Lacus vel facilisis volutpat est velit egestas dui id. Aliquam nulla facilisi cras fermentum odio eu. Pretium fusce id velit ut tortor pretium viverra suspendisse. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Et pharetra pharetra massa massa ultricies.'
+]

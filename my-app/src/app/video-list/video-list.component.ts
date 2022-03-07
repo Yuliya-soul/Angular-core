@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { videoDescription } from './mock.data';
 
 @Component({
   selector: 'app-video-list',
@@ -16,5 +17,6 @@ export class VideoListComponent implements OnInit {
     }
   ngOnInit(): void {
   }
-
+  list=[1,2,3,4]
+text=videoDescription[0]
 }
