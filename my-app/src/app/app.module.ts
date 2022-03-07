@@ -9,7 +9,8 @@ import{MatInputModule} from '@angular/material/input';
 import { HeaderComponent } from './header/header.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component'
+import { MainComponent } from './main/main.component';
+import { VideoListDirective } from './video-list/video-list.directive'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MainComponent } from './main/main.component'
     HeaderComponent,
     VideoListComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    VideoListDirective
   ],
   imports: [
     BrowserModule,
