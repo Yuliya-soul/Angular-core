@@ -1,19 +1,16 @@
 <div class="container">
-    <h2 >{{section}}</h2>
-    <br>
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Text for search</mat-label>
-      <input matInput placeholder="Text for search"#newItem>
-      </mat-form-field>
-      <button mat-button color="primary">Search</button>  
+  <h2 >{{ section }}</h2>
+  <br />
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Text for search</mat-label>
+    <input matInput placeholder="Text for search" #newItem />
+  </mat-form-field>
+  <button mat-button color="primary">Search</button>
 
-      <div class="video-course-container">
- 
-        <br>
-     <abbr appVideoListBold> Video course 1</abbr>
-      <button mat-button color="primary" (click)="change(true)">+</button>  
-      <button mat-button color="primary" (click)="change(false)">-</button>  
-      </div>
- </div>
- 
-       
+  <div class="video-course-container">
+    <br />
+    <abbr appVideoListBold> Video course 1</abbr>
+    <button mat-button color="primary" (click)="change(true)">+</button>
+    <button mat-button color="primary" (click)="change(false)">-</button>
+  </div>
+</div>

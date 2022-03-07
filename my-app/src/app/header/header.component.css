@@ -1,7 +1,8 @@
 header{
-    
-    background-color: rgb(82, 68, 92);
-    height: 56px;
-    text-align: center;
-    color: whitesmoke;
+    height: 60px;
+    min-height: 60px;
+    min-width: 360px;
+    background-color: #303240;
+    color: #fff;
+    fill: #fff;
 }
