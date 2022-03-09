@@ -10,9 +10,11 @@
   margin-right: auto;
   background-color: #fff;
   width: 1040px;
-  
 }
 .video-course-container {
-  background-color: rgba(0, 158, 204, 0.5);;
-  
+  background-color: rgba(0, 158, 204, 0.5);
+}
+
+.alert {
+  border: red solid 2px;
 }

@@ -18,6 +18,7 @@ export class VideoListComponent implements OnInit {
   }
   ngOnInit(): void {}
   list = [1, 2, 3, 4];
+  user=''
   text = videoDescription[0];
   addItem(value:any) {
     this.list.push(this.videoService.addItem(value));

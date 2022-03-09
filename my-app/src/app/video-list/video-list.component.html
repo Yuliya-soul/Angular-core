@@ -1,5 +1,15 @@
 <div class="container">
-  <button mat-button (click)="addItem(newItem.value)">Add</button>
+  <input
+    class="form-control"
+    name="name"
+    [(ngModel)]="user"
+    #name="ngModel"
+    required
+  />
+  <div [hidden]="name.valid || name.untouched" class="alert ">
+    No video added
+  </div>
+  <button mat-button (click)="addItem(name.value)">Add</button>
   <h2>{{ section | uppercase }}</h2>
   <br />
   <mat-form-field appearance="fill" style="width: 953px">
@@ -53,7 +63,8 @@
       #newItem
     />
   </mat-form-field>
-  <button mat-button color="primary">Search</button>
+
+  <button mat-button color="primary" [disabled]="!newItem.value">Search</button>
 
   <div class="video-course-container">
     <br />
