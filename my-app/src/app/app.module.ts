@@ -11,6 +11,7 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { VideoListDirective } from './video-list/video-list.directive'
+import { WhileDirective } from './header/header.while.directive';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { VideoListDirective } from './video-list/video-list.directive'
     VideoListComponent,
     FooterComponent,
     MainComponent,
-    VideoListDirective
+    VideoListDirective,
+    WhileDirective
   ],
   imports: [
     BrowserModule,
