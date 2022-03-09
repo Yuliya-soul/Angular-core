@@ -1,24 +1,79 @@
 <div class="container">
-  <h2 >{{ section }}</h2>
+  <button mat-button (click)="addItem(newItem.value)">Add</button>
+  <h2>{{ section | uppercase }}</h2>
   <br />
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Text for search</mat-label>
-    <input matInput placeholder="Text for search" #newItem />
+  <mat-form-field appearance="fill" style="width: 953px">
+    <mat-label>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class=""
+      >
+        <title>ic/search/24/normal</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g
+          id="ic/search/24/normal"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g id="icon">
+            <g id="glass" transform="translate(4.000000, 3.000000)">
+              <path
+                d="M7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 Z M7,12 C9.76142375,12 12,9.76142375 12,7 C12,4.23857625 9.76142375,2 7,2 C4.23857625,2 2,4.23857625 2,7 C2,9.76142375 4.23857625,12 7,12 Z"
+                id="Combined-Shape"
+                fill="#9C9C9C"
+              ></path>
+              <path
+                d="M16,17 L13,14"
+                id="Path-2"
+                stroke="#979797"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M14.9595369,15.9595369 L11,12"
+                id="Path-2"
+                stroke="#979797"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </mat-label>
+    <input
+      matInput
+      placeholder="Search courses, materials and additional content"
+      #newItem
+    />
   </mat-form-field>
   <button mat-button color="primary">Search</button>
 
   <div class="video-course-container">
     <br />
-    <ul  *ngFor="let item of list" >
+    <ul *ngFor="let item of list">
       <li style="margin-bottom: 15px; list-style-type: none">
-        <abbr appVideoListBold > Video course {{item}}</abbr>
-        <br>
-        {{text}}
-        <button mat-button color="primary" (click)="change(true)" style="border: solid;margin-right: 15px;">Edit</button>
-        <button mat-button color="primary" (click)="change(false)" style="border: solid;">Delete</button>
+        <abbr appVideoListBold> Video course {{ item }}</abbr>
+        <br />
+        {{ text }}
+        <button
+          mat-button
+          color="primary"
+          (click)="change(true)"
+          style="margin-right: 15px"
+        >
+          Edit
+        </button>
+        <button mat-button color="primary" (click)="change(false)">
+          Delete
+        </button>
       </li>
-
     </ul>
-   
   </div>
 </div>
