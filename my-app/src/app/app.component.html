@@ -1,4 +1,13 @@
-
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <a routerLink="/auth" routerLinkActive="active"> authorization</a>
+  </button>
+  <button mat-menu-item>
+    <a routerLink="/home" routerLinkActive="active">home</a>
+  </button>
+  <button mat-menu-item><a routerLink="/about" routerLinkActive="active">about</a></button>
+</mat-menu>
 <div>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>

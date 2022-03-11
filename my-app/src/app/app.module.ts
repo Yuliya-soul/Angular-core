@@ -16,9 +16,23 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MatMenuModule } from '@angular/material/menu';
+
+import { AboutComponent } from './about/about.component';
+import { AboutGuard } from './about/about.guard';
+
 const appRouts: Routes = [
-  { path: 'home', component: MainComponent },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    component: MainComponent,
+  },
   { path: 'auth', component: AuthorizationComponent },
+  { path: 'about', component: AboutComponent, canActivate: [AboutGuard] },
   { path: '**', component: NotFoundComponent },
 ];
 @NgModule({
@@ -30,6 +44,7 @@ const appRouts: Routes = [
     MainComponent,
     VideoListDirective,
     WhileDirective,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,8 +54,9 @@ const appRouts: Routes = [
     MatInputModule,
     FormsModule,
     RouterModule.forRoot(appRouts),
+    MatMenuModule,
   ],
-  providers: [],
+  providers: [AboutGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
