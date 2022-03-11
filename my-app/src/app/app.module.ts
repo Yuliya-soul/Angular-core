@@ -13,6 +13,14 @@ import { MainComponent } from './main/main.component';
 import { VideoListDirective } from './video-list/video-list.directive';
 import { WhileDirective } from './header/header.while.directive';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+const appRouts: Routes = [
+  { path: 'home', component: MainComponent },
+  { path: 'auth', component: AuthorizationComponent },
+  { path: '**', component: NotFoundComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatInputModule,
     FormsModule,
+    RouterModule.forRoot(appRouts),
   ],
   providers: [],
   bootstrap: [AppComponent],

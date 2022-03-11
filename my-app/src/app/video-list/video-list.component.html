@@ -6,10 +6,11 @@
     #name="ngModel"
     required
   />
-  <div [hidden]="name.valid || name.untouched" class="alert ">
+  <div [hidden]="name.valid || name.untouched" class="alert">
     No video added
   </div>
   <button mat-button (click)="addItem(name.value)">Add</button>
+  {{ user }}
   <h2>{{ section | uppercase }}</h2>
   <br />
   <mat-form-field appearance="fill" style="width: 953px">
